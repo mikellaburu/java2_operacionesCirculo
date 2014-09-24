@@ -1,0 +1,88 @@
+
+public class Circulo {
+//Atributos
+private double r;
+final private double pi=3.1416;
+
+/*constructor por parametro
+public Circulo(int radio){
+	this.r=radio;
+}*/
+
+
+//getRadio
+public double getRadio () {
+	return this.r;
+
+ }
+//Metodo set
+public void setRadio(double radio){
+	this.r=radio;
+}
+
+//Area
+ public double area () {
+	;
+	return pi*this.r*this.r;
+	
+ }
+//Perimetro
+public double perimetro () {
+	double result = 0;
+	result = 2*pi*this.r;
+	return result;
+ }
+
+/*Atributos
+		private int r;
+		final private double pi=3.1416;
+		
+		//Contructor por defecto
+		public Circulo() {
+			this.r=10;
+		}
+		//constructor por parametro
+		public Circulo(int radio){
+			this.r=radio;
+		}
+		
+		//Metodos get
+		public int getRadio(){
+			return this.r;
+		}
+		public double getPi(){
+			return this.pi;
+		}
+		
+		//Metodo set
+		public void setRadio(int radio){
+			this.r=radio;
+		}
+		
+		//Metodo calculaArea
+		public double calculaArea(){
+			return 2*pi*this.r*this.r;
+		}
+		//Metodo calcuraPerimetro
+		public double calculaPer(){
+			return 2*pi*this.r;
+		}
+		//Metodos esMayor, acceso del mismo paquete
+		boolean esMayor(Circulo c){
+			if (c.calculaArea()>this.calculaArea()){
+				return true;
+			}else{
+				return false;
+			}
+		}
+		//Pasandole el radio de otro circulo 
+		
+		boolean esMayor(int radio){
+			if (radio>this.r){
+				return true;
+			}else{
+				return false;
+			}
+		}
+*/
+}
